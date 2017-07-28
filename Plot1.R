@@ -1,5 +1,5 @@
 ## Loading the data
-EPCdata <- read.csv("household_power_consumption.txt", header=T, sep=';', na.strings="?", 
+EPCdata <- read.table("household_power_consumption.txt", header=T, sep=';', na.strings="?", 
                       nrows=2075259, check.names=F, stringsAsFactors=F, comment.char="", quote='\"')
 
 EPCdata$Date <- as.Date(EPCdata$Date, format="%d/%m/%Y")
